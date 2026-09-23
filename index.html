@@ -28,6 +28,7 @@
 <script>
   var AW_ID    = "AW-18442869490";        // E Market Hub LLC / 435-781-7658
   var AW_LABEL = "pBwqCPuzrfMcEPK1n9pE"; // "Calls from website (60s+)"
+  var TAP_LABEL = "VBbuCP2604IdEPK1n9pE"; // "Tap to call (website)" - fires on every tel: click
   var CALL_DISPLAY = "(888) 725-3056";
 </script>
 <script>
@@ -57,6 +58,15 @@
       for (var i = 0; i < links.length; i++) { links[i].setAttribute('href', 'tel:' + mobile_number); }
     }
   });
+
+  // Count every tap-to-call click as a website conversion. Fires immediately on
+  // the click, so it also captures calls that ring out or last under 60s, which
+  // the call-based conversions never see.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (!a) { return; }
+    gtag('event', 'conversion', { 'send_to': AW_ID + '/' + TAP_LABEL });
+  }, true);
 </script>
 
 <style>
