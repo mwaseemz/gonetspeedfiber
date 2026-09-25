@@ -4,19 +4,375 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Site No Longer Active</title>
-<link rel="icon" href="favicon.ico">
+<title>Frontier Fiber Internet in Connecticut — Check Your Address | Authorized Retailer</title>
+<meta name="description" content="Independent authorized retailer for Frontier Fiber in Connecticut. Call (888) 725-3056 and we'll check whether Frontier Fiber reaches your address, explain the plans and price for your home, and place your order.">
+<!-- Google tag (gtag.js) + Google Ads call tracking - account E Market Hub LLC (435-781-7658) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18442869490"></script>
+<script>
+  var AW_ID = 'AW-18442869490';
+  var CALL_DISPLAY = '(888) 725-3056';
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', AW_ID);
+  // "Calls from website (60s+)": Google forwarding number swap for ad visitors
+  gtag('config', AW_ID + '/pBwqCPuzrfMcEPK1n9pE', {
+    'phone_conversion_number': CALL_DISPLAY,
+    'phone_conversion_callback': function(formatted_number, mobile_number) {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+      var nodes = [];
+      while (walker.nextNode()) { if (walker.currentNode.nodeValue.indexOf(CALL_DISPLAY) !== -1) nodes.push(walker.currentNode); }
+      nodes.forEach(function(n){ n.nodeValue = n.nodeValue.split(CALL_DISPLAY).join(formatted_number); });
+      var links = document.querySelectorAll('a[href^="tel:"]');
+      for (var i = 0; i < links.length; i++) { links[i].setAttribute('href', 'tel:' + mobile_number); }
+    }
+  });
+  // "Tap to call (website)": fires on every tel: click
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (a) { gtag('event', 'conversion', { 'send_to': AW_ID + '/VBbuCP2604IdEPK1n9pE' }); }
+  }, true);
+</script>
+
 <style>
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f5fd;color:#33373d;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;text-align:center;padding:24px}
-  main{max-width:520px}
-  h1{font-size:1.6rem;color:#102a4a;margin:0 0 12px}
-  p{line-height:1.6;color:#555}
+  :root{
+    --navy:#0b2545; --navy2:#13315c; --blue:#1d6fd8; --blue2:#2e86ff;
+    --accent:#ff7a1a; --accent2:#e96c0e;
+    --bg:#f6f9fd; --card:#ffffff; --text:#26303c; --muted:#5b6b7c;
+    --radius:14px; --shadow:0 8px 30px rgba(11,37,69,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  a{color:var(--blue);text-decoration:none}
+  .container{max-width:1140px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-block;padding:14px 30px;border-radius:50px;font-weight:700;font-size:1rem;transition:.2s;cursor:pointer;border:none}
+  .btn-accent{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(255,122,26,.35)}
+  .btn-accent:hover{background:var(--accent2);transform:translateY(-2px)}
+  .btn-outline{border:2px solid #fff;color:#fff;background:transparent}
+  .btn-outline:hover{background:rgba(255,255,255,.12)}
+  .tag{display:inline-block;background:rgba(46,134,255,.12);color:var(--blue);font-weight:700;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:14px}
+  section{padding:74px 0}
+  h2{font-size:2.05rem;color:var(--navy);line-height:1.25;margin-bottom:14px}
+  .sub{color:var(--muted);max-width:660px;margin:0 auto 44px;text-align:center}
+  .center{text-align:center}
+
+  .disclose{background:#eef4fc;color:var(--navy);font-size:.82rem;text-align:center;padding:8px 22px;border-bottom:1px solid #dbe6f5}
+  .topbar{background:var(--navy);color:#cfe0f5;font-size:.85rem;padding:8px 0}
+  .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+  .topbar a{color:#fff;font-weight:700}
+
+  header{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 12px rgba(11,37,69,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px;font-size:1.45rem;font-weight:800;color:var(--navy)}
+  .logo .mark{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--navy));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.05rem;font-weight:800}
+  .logo span b{color:var(--blue)}
+  .nav ul{display:flex;gap:26px;list-style:none}
+  .nav ul a{color:var(--text);font-weight:600;font-size:.95rem}
+  .nav ul a:hover{color:var(--blue)}
+  .nav .call{background:var(--accent);color:#fff;padding:10px 20px;border-radius:50px;font-weight:700;white-space:nowrap}
+  @media(max-width:880px){.nav ul{display:none}}
+
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy2) 55%,#1b4a8f 100%);color:#fff;padding:84px 0 92px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(46,134,255,.35),transparent 70%)}
+  .hero .container{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;position:relative;z-index:2}
+  .hero .eyebrow{display:inline-block;background:rgba(255,255,255,.12);color:#ffd2ad;font-weight:700;font-size:.78rem;letter-spacing:1.4px;text-transform:uppercase;padding:6px 14px;border-radius:30px;margin-bottom:16px}
+  .hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:18px}
+  .hero h1 em{font-style:normal;color:#ffb066}
+  .hero p.lead{font-size:1.12rem;color:#d7e4f5;margin-bottom:28px;max-width:540px}
+  .hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:24px}
+  .trust{display:flex;gap:22px;flex-wrap:wrap;color:#bcd2ec;font-size:.9rem}
+  .trust div::before{content:"✓ ";color:#7fd99a;font-weight:800}
+  .hero-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:32px 30px;color:var(--text);text-align:center}
+  .hero-card h3{color:var(--navy);margin-bottom:8px;font-size:1.3rem}
+  .hero-card p{font-size:.93rem;color:var(--muted);margin-bottom:18px}
+  .hero-card .num{display:block;font-size:2rem;font-weight:800;color:var(--navy);margin-bottom:6px}
+  .hero-card .num:hover{color:var(--blue)}
+  .hero-card .btn{width:100%;margin-top:10px}
+  .hero-card .fine{font-size:.78rem;color:#8a97a6;margin-top:14px;line-height:1.5}
+  @media(max-width:880px){.hero .container{grid-template-columns:1fr}.hero h1{font-size:2.1rem}}
+
+  .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  @media(max-width:980px){.grid4{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:880px){.grid3{grid-template-columns:1fr}}
+  @media(max-width:560px){.grid4{grid-template-columns:1fr}}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:30px 26px}
+  .card .icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px;background:linear-gradient(135deg,#e8f1ff,#d4e6ff)}
+  .card h3{color:var(--navy);margin-bottom:8px;font-size:1.15rem}
+  .card p{color:var(--muted);font-size:.93rem}
+  .note{color:var(--muted);font-size:.85rem;text-align:center;max-width:760px;margin:30px auto 0}
+
+  .plans{background:#fff}
+  .plan{background:var(--bg);border-radius:var(--radius);padding:30px 26px;border:1px solid #e1e9f4}
+  .plan .speed{font-size:1.9rem;font-weight:800;color:var(--navy);line-height:1.1}
+  .plan .label{color:var(--blue);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:1px;margin:6px 0 12px}
+  .plan p{color:var(--muted);font-size:.93rem;margin-bottom:16px}
+  .plan a{font-weight:700}
+
+  .steps .step-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  @media(max-width:880px){.steps .step-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.steps .step-grid{grid-template-columns:1fr}}
+  .step{text-align:center;padding:22px 14px}
+  .step .n{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;font-weight:800;font-size:1.25rem;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+  .step h4{color:var(--navy);margin-bottom:6px}
+  .step p{color:var(--muted);font-size:.9rem}
+
+  .where{background:#fff}
+  .states{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:8px}
+  .states span{background:var(--bg);border:1px solid #dbe6f5;border-radius:30px;padding:8px 16px;font-weight:600;color:var(--navy);font-size:.92rem}
+  .states span.hi{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+  details{background:#fff;border-radius:12px;box-shadow:var(--shadow);margin-bottom:14px;padding:20px 24px}
+  details summary{font-weight:700;color:var(--navy);cursor:pointer;font-size:1rem}
+  details p{margin-top:12px;color:var(--muted);font-size:.95rem}
+
+  .band{background:linear-gradient(135deg,var(--accent),#ff9a4d);color:#fff;text-align:center;padding:62px 0}
+  .band h2{color:#fff}
+  .band p{margin-bottom:26px;color:#fff7ef}
+  .band .btn{background:#fff;color:var(--accent2)}
+
+  .legal{background:#fff}
+  .legal h2{font-size:1.6rem}
+  .legal h3{color:var(--navy);margin:24px 0 8px;font-size:1.05rem}
+  .legal p,.legal li{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+  .legal ul{padding-left:22px}
+  .legal .box{background:var(--bg);border-radius:var(--radius);padding:34px;margin-bottom:30px}
+
+  footer.site{background:var(--navy);color:#b9cce4;padding:54px 0 90px;font-size:.9rem}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:36px;margin-bottom:34px}
+  @media(max-width:880px){.foot-grid{grid-template-columns:1fr}}
+  footer.site h4{color:#fff;margin-bottom:14px;font-size:1rem}
+  footer.site ul{list-style:none}
+  footer.site li{margin-bottom:9px}
+  footer.site a{color:#b9cce4}
+  footer.site a:hover{color:#fff}
+  .disclaimer{border-top:1px solid rgba(255,255,255,.15);padding-top:24px;font-size:.76rem;color:#8aa3c4;line-height:1.6}
+  .disclaimer p{margin-bottom:10px}
+
+  .sticky-call{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--accent);color:#fff;text-align:center;padding:14px;font-weight:800;font-size:1.05rem}
+  @media(max-width:880px){.sticky-call{display:block}}
 </style>
 </head>
 <body>
-<main>
-  <h1>This website is no longer active</h1>
-  <p>We are no longer taking orders through this site. It is not affiliated with or operated by GoNetspeed. For GoNetspeed service, please visit gonetspeed.com.</p>
-</main>
+
+<div class="disclose"><strong>Independent authorized retailer for Frontier&reg; Fiber.</strong> We are not Frontier Communications, and this site is not affiliated with GoNetspeed.</div>
+
+<div class="topbar">
+  <div class="container">
+    <div>🕘 Mon&ndash;Fri, 10:30am&ndash;7:30pm ET</div>
+    <div>Check your address: <a href="tel:+18887253056">(888) 725-3056</a></div>
+  </div>
+</div>
+
+<header>
+  <nav class="nav container">
+    <div class="logo"><div class="mark">CT</div><span>CT&nbsp;<b>Fiber Connect</b></span></div>
+    <ul>
+      <li><a href="#why">Why Fiber</a></li>
+      <li><a href="#plans">Speeds</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="call" href="tel:+18887253056">📞 (888) 725-3056</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Authorized Frontier Fiber Retailer</span>
+      <h1>Frontier Fiber in Connecticut &mdash; <em>Check Your Address in One Call</em></h1>
+      <p class="lead">Fiber is built street by street. Call us and we'll check whether Frontier Fiber reaches your home, explain the plans and the price for your address, and place your order on the same call. Our help costs you nothing.</p>
+      <div class="cta-row">
+        <a class="btn btn-accent" href="tel:+18887253056">Call (888) 725-3056</a>
+        <a class="btn btn-outline" href="#plans">See Speeds</a>
+      </div>
+      <div class="trust">
+        <div>Free address check</div>
+        <div>No obligation</div>
+        <div>Order placed on the call</div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>Is Frontier Fiber at your address?</h3>
+      <p>Have your service address ready. Most calls take about 10 minutes.</p>
+      <a class="num" href="tel:+18887253056">(888) 725-3056</a>
+      <a class="btn btn-accent" href="tel:+18887253056">📞 Tap to Call Now</a>
+      <p class="fine">Mon&ndash;Fri, 10:30am&ndash;7:30pm ET. New Frontier service only &mdash; existing Frontier customers should contact Frontier directly for billing or support.</p>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="center"><span class="tag">Why Frontier Fiber</span></div>
+    <h2 class="center">A 100% Fiber Connection to Your Home</h2>
+    <p class="sub">Frontier Fiber runs fiber-optic cable all the way to your house instead of older copper or cable lines.</p>
+    <div class="grid4">
+      <div class="card"><div class="icon">⚡</div><h3>Same Speed Up &amp; Down</h3><p>Upload as fast as you download &mdash; for video calls, cloud backups, gaming and sending big files.</p></div>
+      <div class="card"><div class="icon">♾️</div><h3>No Data Caps</h3><p>Stream, game and work from home without watching a monthly data allowance.</p></div>
+      <div class="card"><div class="icon">📝</div><h3>No Annual Contract</h3><p>Fiber plans are month to month. Your agent will confirm the terms for your plan before you order.</p></div>
+      <div class="card"><div class="icon">📶</div><h3>Wi-Fi Equipment</h3><p>Frontier provides Wi-Fi equipment with fiber plans. We'll explain exactly what's included for the speed you pick.</p></div>
+    </div>
+    <p class="note">Plan features, speeds, equipment and pricing are set by Frontier, vary by address and can change. Everything is confirmed on the call before you place an order.</p>
+  </div>
+</section>
+
+<section class="plans" id="plans">
+  <div class="container">
+    <div class="center"><span class="tag">Speeds</span></div>
+    <h2 class="center">Pick the Speed That Fits Your Home</h2>
+    <p class="sub">Frontier prices by address and runs its own promotions, so we quote your real monthly price on the call instead of publishing a number that may not apply to you.</p>
+    <div class="grid3">
+      <div class="plan"><div class="speed">500 Mbps</div><div class="label">Everyday fiber</div><p>Streaming, browsing and video calls for a household of 1&ndash;4 people.</p><a href="tel:+18887253056">Call for your price →</a></div>
+      <div class="plan"><div class="speed">1 Gig</div><div class="label">Busy households</div><p>Several people working from home, 4K streaming and gaming at the same time.</p><a href="tel:+18887253056">Call for your price →</a></div>
+      <div class="plan"><div class="speed">2 Gig &amp; up</div><div class="label">Multi-gig</div><p>Large households, creators and power users. Multi-gig availability varies by address.</p><a href="tel:+18887253056">Call for your price →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="steps" id="how">
+  <div class="container">
+    <div class="center"><span class="tag">Simple Process</span></div>
+    <h2 class="center">How It Works</h2>
+    <p class="sub">From your first call to installation day.</p>
+    <div class="step-grid">
+      <div class="step"><div class="n">1</div><h4>Call Us</h4><p>Dial (888) 725-3056 and give us your service address.</p></div>
+      <div class="step"><div class="n">2</div><h4>We Check Frontier</h4><p>We look up whether Frontier Fiber is available at your address and which speeds.</p></div>
+      <div class="step"><div class="n">3</div><h4>You Choose</h4><p>We explain the monthly price, promo terms and equipment in plain English. You decide.</p></div>
+      <div class="step"><div class="n">4</div><h4>Get Connected</h4><p>We place the order and help you pick an installation date.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="where">
+  <div class="container">
+    <div class="center"><span class="tag">Frontier Fiber in Connecticut</span></div>
+    <h2 class="center">One of Connecticut's Largest Fiber Networks</h2>
+    <p class="sub">Frontier has built fiber across most of Connecticut &mdash; from Hartford, New Haven and Bridgeport to Stamford, Waterbury, Norwalk, Danbury and the shoreline towns. Availability still varies street by street, so call to check your exact address.</p>
+    <div class="states">
+      <span class="hi">Hartford County</span><span class="hi">New Haven County</span><span class="hi">Fairfield County</span><span>New London County</span><span>Litchfield County</span><span>Middlesex County</span><span>Tolland County</span><span>Windham County</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container" style="max-width:860px">
+    <div class="center"><span class="tag">FAQ</span></div>
+    <h2 class="center">Frequently Asked Questions</h2>
+    <p class="sub">The questions we hear most.</p>
+    <details open><summary>Is this Frontier's website?</summary><p>No. We are an independent authorized retailer for Frontier. We are not Frontier Communications and we are not an internet service provider. We can check availability and place new Frontier orders; the service itself is provided, installed, billed and supported by Frontier.</p></details>
+    <details><summary>Does it cost more to order through you?</summary><p>No. You get the same Frontier plans and promotions available at your address. We're paid by the provider when we set up a new customer, which doesn't change what you pay.</p></details>
+    <details><summary>Why don't you list prices?</summary><p>Frontier's pricing and promotions depend on your address and change over time. We'd rather give you the real monthly price for your home on the call, including what happens after any promotional period, than publish a number that turns out to be wrong.</p></details>
+    <details><summary>What if Frontier Fiber isn't available at my address?</summary><p>We'll tell you plainly. This line only places Frontier orders, so if Frontier Fiber doesn't reach your street yet, we'll let you know rather than try to sell you something else.</p></details>
+    <details><summary>I'm already a Frontier customer and need help with my bill or service.</summary><p>We can't help with existing accounts &mdash; we only set up new service. Please contact Frontier directly through frontier.com for billing, technical support, moves or cancellations.</p></details>
+    <details><summary>What do I need when I call?</summary><p>Just your service address and a rough idea of how your household uses the internet. Most calls take about 10 minutes.</p></details>
+  </div>
+</section>
+
+<section class="band">
+  <div class="container">
+    <h2>See If Frontier Fiber Reaches Your Street</h2>
+    <p>Free address check. No obligation. Mon&ndash;Fri, 10:30am&ndash;7:30pm ET.</p>
+    <a class="btn" href="tel:+18887253056">📞 Call (888) 725-3056</a>
+  </div>
+</section>
+
+<section class="legal" id="contact">
+  <div class="container">
+    <div class="box">
+      <h2 id="about">About Us</h2>
+      <p>This website is operated by E Market Hub LLC, an independent sales company and an authorized retailer for Frontier Communications. We help households check Frontier Fiber availability and place new orders by phone. We are not an internet service provider. All service is provided, installed, billed and supported by Frontier under its own terms. This site is not affiliated with, endorsed by or operated by GoNetspeed.</p>
+      <h3>Contact Us</h3>
+      <p>📞 Phone: (888) 725-3056<br>🕘 Hours: Monday&ndash;Friday, 10:30am&ndash;7:30pm (ET)</p>
+    </div>
+
+    <div class="box" id="privacy">
+      <h2>Privacy Policy</h2>
+      <p><em>Last updated: September 2026</em></p>
+      <p>E Market Hub LLC ("we," "us," or "our") respects your privacy. This policy explains what information we collect, how we use it, and the choices you have.</p>
+      <h3>Information We Collect</h3>
+      <ul>
+        <li><strong>Information you give us on a call:</strong> your name, phone number, email address, service address and the service you want.</li>
+        <li><strong>Automatic information:</strong> standard web log and advertising data such as IP address, browser type, pages visited, referring URLs, and whether you tapped a phone number after clicking an ad.</li>
+      </ul>
+      <h3>How We Use Your Information</h3>
+      <ul>
+        <li>To check Frontier service availability at your address and explain plan options.</li>
+        <li>To place an order on your behalf with Frontier when you ask us to.</li>
+        <li>To follow up with you about the order you requested.</li>
+        <li>To measure and improve our advertising and website.</li>
+      </ul>
+      <h3>Sharing of Information</h3>
+      <p>We share your information with Frontier as needed to set up the service you order, and with vendors who help us operate (for example, call routing and advertising measurement) under confidentiality obligations. <strong>We do not sell your personal information.</strong></p>
+      <h3>Calls</h3>
+      <p>Calls to our number may be routed through a Google call-tracking number and may be recorded for quality and training. If you'd rather not be contacted again, ask the agent to add you to our internal do-not-call list.</p>
+      <h3>Data Security &amp; Retention</h3>
+      <p>We use commercially reasonable safeguards to protect your information and keep it only as long as needed for the purposes above or as required by law.</p>
+      <h3>Your Rights</h3>
+      <p>You may request access to, correction of, or deletion of your personal information by calling (888) 725-3056. California residents may exercise rights under the CCPA/CPRA, including the right to know, delete, and opt out of sharing.</p>
+      <h3>Children's Privacy</h3>
+      <p>Our services are intended for adults 18+. We do not knowingly collect information from children under 13.</p>
+      <h3>Changes</h3>
+      <p>We may update this policy from time to time; the latest version will always be posted on this page.</p>
+    </div>
+
+    <div class="box" id="terms">
+      <h2>Terms of Service</h2>
+      <p><em>Last updated: September 2026</em></p>
+      <h3>1. Who We Are</h3>
+      <p>E Market Hub LLC is an independent authorized retailer for Frontier Communications. We are not a telecommunications carrier or internet service provider. Service ordered through us is provided, installed, billed and supported by Frontier under Frontier's own terms and conditions.</p>
+      <h3>2. No Guarantee of Availability or Pricing</h3>
+      <p>Availability, plans, pricing, speeds, equipment and promotional offers are set by Frontier, vary by address and are subject to change without notice. Final pricing and terms are confirmed by Frontier at the time of order. Promotions may require credit qualification, Auto Pay or other provider conditions.</p>
+      <h3>3. Our Service Is Free to Consumers</h3>
+      <p>We don't charge you for checking availability or placing an order. We may receive compensation from Frontier when you order service through us.</p>
+      <h3>4. Trademarks</h3>
+      <p>Frontier&reg; and related marks are trademarks of Frontier Communications Parent, Inc., used here only to identify the service we are authorized to sell. Their use does not imply that Frontier operates or endorses this website.</p>
+      <h3>5. Acceptable Use</h3>
+      <p>You agree to provide accurate information and to use this website only for lawful, personal purposes.</p>
+      <h3>6. Limitation of Liability</h3>
+      <p>To the maximum extent permitted by law, E Market Hub LLC is not liable for the acts, omissions, services, billing or equipment of Frontier or any other third party, nor for indirect, incidental or consequential damages arising from use of this site.</p>
+      <h3>7. Governing Law</h3>
+      <p>These terms are governed by the laws of the United States and the state in which E Market Hub LLC is registered, without regard to conflict-of-law principles.</p>
+      <h3>8. Contact</h3>
+      <p>Questions about these terms: (888) 725-3056.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:14px"><div class="mark">CT</div><span>CT&nbsp;<b style="color:#7fb4ff">Fiber Connect</b></span></div>
+        <p>Independent authorized retailer for Frontier Fiber in Connecticut. New orders by phone. Operated by E Market Hub LLC.</p>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>New Frontier Orders</h4>
+        <ul>
+          <li>📞 <a href="tel:+18887253056">(888) 725-3056</a></li>
+          <li>🕘 Mon&ndash;Fri, 10:30am&ndash;7:30pm (ET)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Independent Retailer Disclosure:</strong> This website is operated by E Market Hub LLC, an independent authorized retailer for Frontier Communications. <strong>We are not Frontier</strong> and we are not an internet service provider. This website is not operated by Frontier; Frontier's official website is frontier.com. All service is provided, installed, billed and supported by Frontier under its own terms. Plans, speeds, pricing, equipment and availability are set by Frontier, vary by address and are subject to change.</p>
+      <p><strong>Trademarks:</strong> Frontier&reg; is a registered trademark of Frontier Communications Parent, Inc. All trademarks referenced are the property of their respective owners and are used only to identify the service we are authorized to sell.</p>
+      <p>&copy; 2026 E Market Hub LLC. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+18887253056">📞 Tap to Call &mdash; Check Frontier Fiber</a>
+
 </body>
 </html>
